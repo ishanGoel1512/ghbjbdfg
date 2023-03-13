@@ -1,7 +1,9 @@
 slidebar As CanvasComponent:
     compHeight: =hei
     Fill: =RGBA(0, 0, 0, 0)
-    Height: =slidebar.compHeight
+    Height: =If(slidebar.PropShow, 1110,110)
+    OnReset: =false
+    PropShow: =Show
     Width: =640
     X: =0
     Y: =0
@@ -19,8 +21,7 @@ slidebar As CanvasComponent:
         Color: =RGBA(255, 255, 255, 1)
         Height: =40
         Icon: =Icon.Hamburger
-        OnSelect: |
-            =Set(Show,true);Set(hei,1130)
+        OnSelect: =Set(Show,true);Set(hei,1130);
         Width: =54
         X: =564
         Y: =35
@@ -242,4 +243,13 @@ slidebar As CanvasComponent:
         X: =If(Show,231,1400)
         Y: =595
         ZIndex: =15
+
+    Label26 As label:
+        Height: =70
+        Size: =21
+        Text: =Show
+        Width: =365
+        X: =40
+        Y: =40
+        ZIndex: =16
 

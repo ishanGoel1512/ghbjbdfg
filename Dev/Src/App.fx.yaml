@@ -1,5 +1,5 @@
 App As appinfo:
     BackEnabled: =false
-    OnStart: =Set(hei,110)
+    OnStart: =Set(hei,110);Set(Show,false);
     StartScreen: =
 

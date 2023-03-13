@@ -322,7 +322,7 @@ Accessories As screen:
         Y: =1015
         ZIndex: =7
 
-    slidebar_1 As slidebar:
-        Height: =slidebar_1.compHeight
+    slidebar_4 As slidebar:
+        Height: =If(slidebar_4.PropShow, 1110,110)
         ZIndex: =8
 

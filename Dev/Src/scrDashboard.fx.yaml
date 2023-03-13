@@ -525,6 +525,7 @@ scrDashboard As screen:
             Fill: =RGBA(56, 96, 178, 0)
             Font: =Font.'Segoe UI'
             Height: =48
+            HoverFill: =
             OnSelect: =Set(varTabSelected,ThisItem.ID)
             Size: =13
             Text: =ThisItem.Label
