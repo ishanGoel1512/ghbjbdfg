@@ -1,0 +1,587 @@
+Assets1 As screen:
+
+    TextInput2 As text:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        BorderThickness: =0
+        Color: |-
+            =ColorValue("#765F5F")
+        Default: =""
+        Fill: =RGBA(144,144,144,0.11)
+        Height: =56
+        HintText: ="Search"
+        PaddingLeft: =55
+        Size: =18
+        Width: =511
+        X: =17
+        Y: =136
+        ZIndex: =1
+
+    Icon1 As icon.Search:
+        Color: |-
+            =ColorValue("#765F5F")
+        Height: =32
+        Icon: =Icon.Search
+        Width: =25
+        X: =35
+        Y: =149
+        ZIndex: =2
+
+    "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Height: =686
+        Items: =CustomGallerySample
+        Layout: =Layout.Vertical
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =172
+        Y: =227
+        ZIndex: =3
+
+        ImgUser As image:
+            Height: =50
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =50
+            RadiusBottomRight: =50
+            RadiusTopLeft: =50
+            RadiusTopRight: =50
+            Width: =50
+            X: =10
+            Y: =11
+            ZIndex: =1
+
+        Separator1 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
+        Button2 As button:
+            Color: |-
+                =ColorValue("#D15070")
+            Fill: |-
+                =ColorValue("#F9EAED")
+            FontWeight: =FontWeight.Bold
+            Height: =47
+            OnSelect: =Select(Parent)
+            PaddingLeft: =0
+            PaddingRight: =20
+            RadiusBottomLeft: =47
+            RadiusBottomRight: =47
+            RadiusTopLeft: =47
+            RadiusTopRight: =47
+            Size: =12
+            Text: ="See More"
+            Width: =137
+            X: =464
+            Y: =16
+            ZIndex: =18
+
+        Icon5 As icon.ArrowRight:
+            Color: |-
+                =ColorValue("#D15070")
+            Height: =23
+            Icon: =Icon.ArrowRight
+            OnSelect: =Select(Parent)
+            PaddingRight: =5
+            Width: =37
+            X: =564
+            Y: =30
+            ZIndex: =19
+
+        Icon6 As icon.VerticalLine:
+            Height: =12
+            Icon: =Icon.VerticalLine
+            OnSelect: =Select(Parent)
+            Width: =2
+            X: =148
+            Y: =46
+            ZIndex: =20
+
+        Label1 As label:
+            Color: =RGBA(209, 80, 112, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =34
+            OnSelect: =Select(Parent)
+            Size: =12
+            Text: =ThisItem.SampleHeading
+            Width: =193
+            X: =73
+            Y: =3
+            ZIndex: =23
+
+        Label8 As label:
+            Height: =15
+            OnSelect: =Select(Parent)
+            Size: =12
+            Text: ="PLPT016"
+            Width: =75
+            X: =73
+            Y: =45
+            ZIndex: =24
+
+        Label11 As label:
+            Height: =21
+            OnSelect: =Select(Parent)
+            Size: =12
+            Text: |-
+                ="Checked Out To :"
+            Width: =139
+            X: =155
+            Y: =42
+            ZIndex: =25
+
+        Label12 As label:
+            Height: =16
+            OnSelect: =Select(Parent)
+            Size: =12
+            Text: ="Gurleen Mann"
+            Width: =119
+            X: =291
+            Y: =45
+            ZIndex: =26
+
+        Label13 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =15
+            OnSelect: =Select(Parent)
+            PaddingLeft: =0
+            Size: =12
+            Text: |-
+                ="Serial Number: "
+            Width: =138
+            X: =10
+            Y: =92
+            ZIndex: =27
+
+        Label14 As label:
+            Height: =23
+            OnSelect: =Select(Parent)
+            Size: =12
+            Text: ="9BPHNL3"
+            Width: =95
+            X: =130
+            Y: =87
+            ZIndex: =28
+
+        Label15 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =20
+            OnSelect: =Select(Parent)
+            Size: =12
+            Text: |-
+                ="Brand:"
+            Width: =69
+            X: =227
+            Y: =89
+            ZIndex: =29
+
+        Label16 As label:
+            Height: =24
+            OnSelect: =Select(Parent)
+            Size: =12
+            Text: ="Dell"
+            Width: =44
+            X: =286
+            Y: =87
+            ZIndex: =30
+
+        Label17 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =30
+            OnSelect: =Select(Parent)
+            Size: =12
+            Text: |-
+                ="Category:"
+            Width: =90
+            X: =384
+            Y: =83
+            ZIndex: =31
+
+        Label18 As label:
+            Height: =21
+            OnSelect: =Select(Parent)
+            Size: =12
+            Text: ="Computer"
+            Width: =90
+            X: =466
+            Y: =86
+            ZIndex: =32
+
+        Label19 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =21
+            OnSelect: =Select(Parent)
+            Size: =12
+            Text: |-
+                ="Warranty:"
+            Width: =91
+            X: =7
+            Y: =116
+            ZIndex: =33
+
+        Label20 As label:
+            Height: =18
+            OnSelect: =Select(Parent)
+            Size: =12
+            Text: ="23/03/23"
+            Width: =90
+            X: =96
+            Y: =119
+            ZIndex: =34
+
+        Label22 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =21
+            OnSelect: =Select(Parent)
+            Size: =12
+            Text: |-
+                ="Status:"
+            Width: =73
+            X: =227
+            Y: =118
+            ZIndex: =35
+
+        Label23 As label:
+            Height: =23
+            OnSelect: =Select(Parent)
+            Size: =12
+            Text: ="Assigned"
+            Width: =78
+            X: =287
+            Y: =117
+            ZIndex: =36
+
+        Label24 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =21
+            OnSelect: =Select(Parent)
+            Size: =12
+            Text: |-
+                ="Condition:"
+            Width: =99
+            X: =384
+            Y: =119
+            ZIndex: =37
+
+        Label25 As label:
+            Color: =RGBA(141, 198, 63, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =18
+            OnSelect: =Select(Parent)
+            Size: =12
+            Text: ="Good"
+            Width: =58
+            X: =474
+            Y: =121
+            ZIndex: =38
+
+        Button1 As button:
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =169
+            HoverFill: =Color.Transparent
+            OnSelect: =Select(Parent)
+            Size: =24
+            Text: =""
+            Width: =640
+            Y: =3
+            ZIndex: =39
+
+    TextInput16 As text:
+        Default: =""
+        DisabledFill: |-
+            =ColorValue("#F9EAED")
+        DisplayMode: =DisplayMode.Disabled
+        Fill: =RGBA(0, 0, 0, 1)
+        Height: =56
+        OnSelect: |-
+            =UpdateContext({show:true})
+        Size: =21
+        Width: =62
+        X: =550
+        Y: =135
+        ZIndex: =4
+
+    Icon3 As icon.Filter:
+        Color: =RGBA(209, 80, 112, 1)
+        DisabledColor: =RGBA(255, 255, 255, 1)
+        Fill: |-
+            =ColorValue("#F9EAED")
+        Height: =32
+        Icon: =Icon.Filter
+        OnSelect: |-
+            =UpdateContext({show:!show})
+        Width: =27
+        X: =567
+        Y: =149
+        ZIndex: =5
+
+    slidebar_3 As slidebar:
+        Height: =122
+        ZIndex: =6
+
+    Icon7 As icon.Add:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =25
+        Icon: =Icon.Add
+        Width: =44
+        X: =451
+        Y: =869
+        ZIndex: =8
+
+    Rectangle2 As rectangle:
+        DisplayMode: =If(show,DisplayMode.Edit,DisplayMode.Disabled)
+        Fill: =Color.White
+        Height: =1136
+        Width: =436
+        X: =If(show,204,1440)
+        ZIndex: =9
+
+    HtmlText3 As htmlViewer:
+        Height: =99
+        HtmlText: |-
+            ="<div style='background: linear-gradient(308.94deg, #ED8F54 -15.17%, #F57865 51.71%, #F86C64 69.04%, #D15070 136.95%);height:80px;'></div>"
+        Width: =436
+        X: =If(show,204,1440)
+        ZIndex: =10
+
+    Label10 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =37
+        Size: =21
+        Text: ="FILTER BY"
+        Width: =138
+        X: =If(show,236,1440)
+        Y: =31
+        ZIndex: =11
+
+    Icon10 As icon.Cancel:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =51
+        Icon: =Icon.Cancel
+        OnSelect: |-
+            =UpdateContext({show:false})
+        X: =If(show,550,1440)
+        Y: =24
+        ZIndex: =12
+
+    Label21 As label:
+        FontWeight: =FontWeight.Semibold
+        Height: =38
+        Size: =21
+        Text: ="Model"
+        Width: =265
+        X: =If(show,236,1440)
+        Y: =110
+        ZIndex: =13
+
+    ComboBox1 As combobox:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(255, 255, 255, 1)
+        ChevronFill: =RGBA(209, 80, 112, 1)
+        Height: =65
+        InputTextPlaceholder: ="Find by name"
+        Items: =ComboBoxSample
+        PaddingBottom: =20
+        PaddingLeft: =20
+        PaddingRight: =20
+        PaddingTop: =20
+        SearchItems: =Search(ComboBoxSample,ComboBox1.SearchText,"Value1")
+        Size: =21
+        Width: =367
+        X: =If(show,244,1440)
+        Y: =149
+        ZIndex: =14
+
+    Label21_1 As label:
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        Size: =21
+        Text: ="Location"
+        Width: =265
+        X: =If(show,236,1440)
+        Y: =249
+        ZIndex: =15
+
+    Label21_2 As label:
+        Height: =35
+        Size: =21
+        Text: ="Warranty Date"
+        Width: =265
+        X: =If(show,236,1440)
+        Y: =677
+        ZIndex: =16
+
+    Label21_3 As label:
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        Size: =21
+        Text: ="Status"
+        Width: =265
+        X: =If(show,236,1440)
+        Y: =392
+        ZIndex: =17
+
+    Label21_4 As label:
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        Size: =21
+        Text: ="Checked Out To"
+        Width: =265
+        X: =If(show,236,1440)
+        Y: =534
+        ZIndex: =18
+
+    Label21_5 As label:
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        Size: =21
+        Text: ="From"
+        Width: =265
+        X: =If(show,236,1440)
+        Y: =757
+        ZIndex: =19
+
+    Label21_6 As label:
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        Size: =21
+        Text: ="To"
+        Width: =265
+        X: =If(show,236,1440)
+        Y: =883
+        ZIndex: =20
+
+    ComboBox1_1 As combobox:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(255, 255, 255, 1)
+        ChevronFill: =RGBA(209, 80, 112, 1)
+        Height: =65
+        InputTextPlaceholder: ="Find by name"
+        Items: =ComboBoxSample
+        PaddingBottom: =20
+        PaddingLeft: =20
+        PaddingRight: =20
+        PaddingTop: =20
+        SearchItems: =Search(ComboBoxSample,ComboBox1_1.SearchText,"Value1")
+        Size: =21
+        Width: =366
+        X: =If(show,244,1440)
+        Y: =291
+        ZIndex: =21
+
+    ComboBox1_2 As combobox:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(255, 255, 255, 1)
+        ChevronFill: =RGBA(209, 80, 112, 1)
+        Height: =65
+        InputTextPlaceholder: ="Find by name"
+        Items: =ComboBoxSample
+        PaddingBottom: =20
+        PaddingLeft: =20
+        PaddingRight: =20
+        PaddingTop: =20
+        SearchItems: =Search(ComboBoxSample,ComboBox1_2.SearchText,"Value1")
+        Size: =21
+        Width: =366
+        X: =If(show,244,1440)
+        Y: =434
+        ZIndex: =22
+
+    ComboBox1_3 As combobox:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(255, 255, 255, 1)
+        ChevronFill: =RGBA(209, 80, 112, 1)
+        Height: =65
+        InputTextPlaceholder: ="Find by name"
+        Items: =ComboBoxSample
+        PaddingBottom: =20
+        PaddingLeft: =20
+        PaddingRight: =20
+        PaddingTop: =20
+        SearchItems: =Search(ComboBoxSample,ComboBox1_3.SearchText,"Value1")
+        Size: =21
+        Width: =366
+        X: =If(show,244,1440)
+        Y: =576
+        ZIndex: =23
+
+    Rectangle3 As rectangle:
+        Fill: =RGBA(166, 166, 166, 1)
+        Height: =1
+        Width: =367
+        X: =If(show,244,1440)
+        Y: =723
+        ZIndex: =24
+
+    ComboBox1_4 As combobox:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(255, 255, 255, 1)
+        ChevronFill: =RGBA(209, 80, 112, 1)
+        Height: =65
+        InputTextPlaceholder: ="Find by name"
+        Items: =ComboBoxSample
+        PaddingBottom: =20
+        PaddingLeft: =20
+        PaddingRight: =20
+        PaddingTop: =20
+        SearchItems: =Search(ComboBoxSample,ComboBox1_4.SearchText,"Value1")
+        Size: =21
+        Width: =366
+        X: =If(show,244,1440)
+        Y: =804
+        ZIndex: =25
+
+    ComboBox1_5 As combobox:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(255, 255, 255, 1)
+        ChevronFill: =RGBA(209, 80, 112, 1)
+        Height: =65
+        InputTextPlaceholder: ="Find by name"
+        Items: =ComboBoxSample
+        PaddingBottom: =20
+        PaddingLeft: =20
+        PaddingRight: =20
+        PaddingTop: =20
+        SearchItems: =Search(ComboBoxSample,ComboBox1_5.SearchText,"Value1")
+        Size: =21
+        Width: =366
+        X: =If(show,244,1440)
+        Y: =933
+        ZIndex: =26
+
+    Rectangle3_1 As rectangle:
+        Fill: =RGBA(166, 166, 166, 1)
+        Height: =1
+        Width: =367
+        X: =If(show,244,1440)
+        Y: =1028
+        ZIndex: =27
+
+    Button3 As button:
+        Color: =RGBA(209, 80, 112, 1)
+        Fill: =RGBA(249, 234, 237, 1)
+        Height: =58
+        Size: =18
+        Text: ="Cancel"
+        Width: =129
+        X: =If(show,304,1440)
+        Y: =1057
+        ZIndex: =28
+
+    HtmlText7 As htmlViewer:
+        Height: =73
+        HtmlText: |-
+            ="<div style='background: linear-gradient(308.94deg, #ED8F54 -15.17%, #F57865 51.71%, #F86C64 69.04%, #D15070 136.95%);
+            font-size:25px;height:60px;border-radius:10px'></div>"
+        Width: =135
+        X: =If(show,441,1440)
+        Y: =1050
+        ZIndex: =30
+

@@ -1,0 +1,327 @@
+Accessories As screen:
+
+    TextInput2_1 As text:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        BorderThickness: =0
+        Color: |-
+            =ColorValue("#765F5F")
+        Default: =""
+        Fill: =RGBA(144,144,144,0.11)
+        Height: =56
+        HintText: ="Search"
+        PaddingLeft: =55
+        Size: =18
+        Width: =511
+        X: =24
+        Y: =159
+        ZIndex: =1
+
+    TextInput16_1 As text:
+        Default: =""
+        DisabledFill: |-
+            =ColorValue("#F9EAED")
+        DisplayMode: =DisplayMode.Disabled
+        Fill: =RGBA(0, 0, 0, 1)
+        Height: =56
+        Size: =21
+        Width: =62
+        X: =565
+        Y: =159
+        ZIndex: =2
+
+    Icon3_1 As icon.Filter:
+        Color: =RGBA(209, 80, 112, 1)
+        DisabledColor: =RGBA(255, 255, 255, 1)
+        Fill: |-
+            =ColorValue("#F9EAED")
+        Height: =32
+        Icon: =Icon.Filter
+        Width: =27
+        X: =582
+        Y: =171
+        ZIndex: =3
+
+    Icon1_1 As icon.Search:
+        Color: |-
+            =ColorValue("#765F5F")
+        Height: =32
+        Icon: =Icon.Search
+        Width: =25
+        X: =41
+        Y: =171
+        ZIndex: =4
+
+    "Gallery1_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Height: =864
+        Items: =CustomGallerySample
+        Layout: =Layout.Vertical
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =172
+        Y: =270
+        ZIndex: =5
+
+        Image1_1 As image:
+            Height: =50
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =50
+            RadiusBottomRight: =50
+            RadiusTopLeft: =50
+            RadiusTopRight: =50
+            Width: =50
+            X: =10
+            Y: =11
+            ZIndex: =1
+
+        Separator1_1 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
+        TextInput3_1 As text:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            BorderThickness: =0
+            Default: |-
+                ="Qty at Hand:"
+            FontWeight: =FontWeight.Semibold
+            Height: =17
+            OnSelect: =Select(Parent)
+            PaddingLeft: =10
+            Size: =12
+            Width: =112
+            Y: =120
+            ZIndex: =7
+
+        TextInput5_1 As text:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            BorderThickness: =0
+            Color: |-
+                =ColorValue("#5F5F5F")
+            Default: ="23/02/26"
+            Height: =27
+            OnSelect: =Select(Parent)
+            PaddingLeft: =3
+            Size: =12
+            Width: =92
+            X: =124
+            Y: =116
+            ZIndex: =9
+
+        TextInput7_1 As text:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            BorderThickness: =0
+            Default: |-
+                ="Min. Qty:"
+            FontWeight: =FontWeight.Semibold
+            Height: =27
+            OnSelect: =Select(Parent)
+            Size: =12
+            Width: =93
+            X: =216
+            Y: =115
+            ZIndex: =11
+
+        TextInput9_1 As text:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            BorderThickness: =0
+            Color: |-
+                =ColorValue("#5F5F5F")
+            Default: ="Assigned"
+            Height: =26
+            OnSelect: =Select(Parent)
+            PaddingLeft: =0
+            Size: =12
+            Width: =111
+            X: =313
+            Y: =116
+            ZIndex: =13
+
+        TextInput10_1 As text:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            BorderThickness: =0
+            Default: |-
+                ="Category:"
+            FontWeight: =FontWeight.Semibold
+            Height: =32
+            OnSelect: =Select(Parent)
+            PaddingLeft: =0
+            Size: =12
+            Width: =78
+            X: =397
+            Y: =81
+            ZIndex: =14
+
+        Button2_1 As button:
+            Color: |-
+                =ColorValue("#D15070")
+            Fill: |-
+                =ColorValue("#F9EAED")
+            FontWeight: =FontWeight.Bold
+            Height: =47
+            HoverFill: =
+            OnSelect: =Select(Parent)
+            PaddingLeft: =0
+            PaddingRight: =20
+            RadiusBottomLeft: =47
+            RadiusBottomRight: =47
+            RadiusTopLeft: =47
+            RadiusTopRight: =47
+            Size: =12
+            Text: ="See More"
+            Width: =137
+            X: =464
+            Y: =16
+            ZIndex: =18
+
+        Icon5_1 As icon.ArrowRight:
+            Color: |-
+                =ColorValue("#D15070")
+            Height: =23
+            Icon: =Icon.ArrowRight
+            OnSelect: =Select(Parent)
+            PaddingRight: =5
+            Width: =37
+            X: =564
+            Y: =30
+            ZIndex: =19
+
+        Icon6_1 As icon.VerticalLine:
+            Height: =12
+            Icon: =Icon.VerticalLine
+            OnSelect: =Select(Parent)
+            Width: =2
+            X: =148
+            Y: =46
+            ZIndex: =20
+
+        Label1_1 As label:
+            Color: =RGBA(209, 80, 112, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =39
+            OnSelect: =Select(Parent)
+            Size: =16
+            Text: =ThisItem.SampleHeading
+            Width: =337
+            X: =73
+            Y: =3
+            ZIndex: =23
+
+        Label8_1 As label:
+            Height: =15
+            OnSelect: =Select(Parent)
+            Size: =12
+            Text: ="PLPT016"
+            Width: =75
+            X: =73
+            Y: =45
+            ZIndex: =24
+
+        Label11_1 As label:
+            Height: =21
+            OnSelect: =Select(Parent)
+            Size: =12
+            Text: |-
+                ="Checked Out To :"
+            Width: =139
+            X: =155
+            Y: =42
+            ZIndex: =25
+
+        Label12_1 As label:
+            Height: =16
+            OnSelect: =Select(Parent)
+            Size: =12
+            Text: ="Gurleen Mann"
+            Width: =119
+            X: =291
+            Y: =45
+            ZIndex: =26
+
+        Label13_1 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =15
+            OnSelect: =Select(Parent)
+            PaddingLeft: =0
+            Size: =12
+            Text: |-
+                ="Brand Name:"
+            Width: =138
+            X: =17
+            Y: =89
+            ZIndex: =27
+
+        Label14_1 As label:
+            Height: =23
+            OnSelect: =Select(Parent)
+            Size: =12
+            Text: ="9BPHNL3"
+            Width: =95
+            X: =130
+            Y: =87
+            ZIndex: =28
+
+        Label15_1 As label:
+            Height: =21
+            OnSelect: =Select(Parent)
+            Size: =12
+            Text: |-
+                ="Requestable:"
+            Width: =112
+            X: =216
+            Y: =89
+            ZIndex: =29
+
+        Label16_1 As label:
+            Height: =26
+            OnSelect: =Select(Parent)
+            Size: =12
+            Text: ="Dell"
+            Width: =63
+            X: =322
+            Y: =87
+            ZIndex: =30
+
+        Label9 As label:
+            Height: =25
+            OnSelect: =Select(Parent)
+            Size: =12
+            Text: =ThisItem.SampleText
+            Width: =165
+            X: =475
+            Y: =85
+            ZIndex: =31
+
+    HtmlText1 As htmlViewer:
+        Height: =84
+        HtmlText: |-
+            ="<div style='background:linear-gradient(308.94deg, #ED8F54 -15.17%, #F57865 51.71%, #F86C64 69.04%, #D15070 136.95%);height:70px;width:200px;border-radius:35px'></div>"
+        Width: =216
+        X: =366
+        Y: =999
+        ZIndex: =6
+
+    Button4 As button:
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =53
+        HoverFill: =
+        PressedBorderColor: =
+        PressedColor: =
+        PressedFill: =
+        RadiusBottomLeft: =18
+        RadiusBottomRight: =18
+        RadiusTopLeft: =18
+        RadiusTopRight: =18
+        Size: =24
+        Text: ="+Add New"
+        Width: =185
+        X: =380
+        Y: =1015
+        ZIndex: =7
+
+    slidebar_1 As slidebar:
+        ZIndex: =8
+

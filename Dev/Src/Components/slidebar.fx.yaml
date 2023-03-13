@@ -1,0 +1,244 @@
+slidebar As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =If(comphei,1310,110)
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    HtmlText4 As htmlViewer:
+        Height: =100
+        HtmlText: |-
+            ="<div style='background: linear-gradient(180deg, #EC6367 0%, #EF8859 100%);position:absolute;left:0px;
+            height: 100px;width:640px'></div>"
+        Width: =640
+        ZIndex: =1
+
+    Icon2 As icon.Hamburger:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =40
+        Icon: =Icon.Hamburger
+        OnSelect: |
+            =Set(Show,true)
+        Width: =54
+        X: =564
+        Y: =35
+        ZIndex: =2
+
+    Rectangle1 As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =463
+        Width: =447
+        X: =If(Show,193,1400)
+        Y: =671
+        ZIndex: =3
+
+    "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =438
+        Items: =["Dashboard","Assets","Accessories","Components","Consumables","Licenses"]
+        Layout: =Layout.Vertical
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =70
+        Width: =447
+        X: =If(Show,193,1400)
+        Y: =238
+        ZIndex: =4
+
+        Title2 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Value
+            VerticalAlign: =VerticalAlign.Top
+            Width: =
+            X: =
+            Y: =44
+            ZIndex: =2
+
+        Subtitle2 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Value
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title2.Width
+            X: =Title2.X
+            Y: =Title2.Y + Title2.Height + 4
+            ZIndex: =3
+
+        Label4 As label:
+            Color: =RGBA(102, 102, 102, 1)
+            Height: =45
+            OnSelect: =Select(Parent)
+            Size: =21
+            Text: =ThisItem.Value
+            Width: =206
+            X: =132
+            Y: =12
+            ZIndex: =6
+
+    Label7 As label:
+        Align: =Align.Center
+        Color: =RGBA(128, 128, 128, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =74
+        Size: =12
+        Text: |-
+            ="Made with ❤
+            
+            at Penthara Technologies
+            "
+        Width: =306
+        X: =If(Show,269,1400)
+        Y: =1060
+        ZIndex: =5
+
+    "Gallery3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Fill: =RGBA(209, 80, 112, 0.1)
+        Height: =303
+        Items: =["Status labels","Categories", "Location","Vendors"]
+        Layout: =Layout.Vertical
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =74
+        Width: =386
+        X: =If(Show,229,1400)
+        Y: =742
+        ZIndex: =6
+
+        Title3 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =
+            VerticalAlign: =VerticalAlign.Top
+            Width: =
+            X: =
+            Y: =44
+            ZIndex: =2
+
+        Subtitle3 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title3.Width
+            X: =Title3.X
+            Y: =Title3.Y + Title3.Height + 4
+            ZIndex: =3
+
+        Label5 As label:
+            Color: =RGBA(102, 102, 102, 1)
+            Height: =43
+            OnSelect: =Select(Parent)
+            Size: =21
+            Text: =ThisItem.Value
+            Width: =266
+            X: =111
+            Y: =18
+            ZIndex: =6
+
+    Label2 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =62
+        Size: =24
+        Text: ="Dashboard"
+        Width: =330
+        X: =22
+        Y: =24
+        ZIndex: =7
+
+    HtmlText6 As htmlViewer:
+        Height: =238
+        HtmlText: |-
+            ="<div style='background:linear-gradient(180deg, #EC6367 -10.17%, #F76F64 17.37%, #F47C62 76.16%, #F57865 99.99%, #F0865A 100%);position: absolute;
+            width: 650px;
+            height: 300px;
+            left: 0px;
+            top: 0px;'></div>"
+        Width: =447
+        X: =If(Show,193,1400)
+        ZIndex: =8
+
+    Icon4 As icon.Cancel:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =38
+        Icon: =Icon.Cancel
+        OnSelect: =Set(Show,false);Set(comphei,false);
+        Width: =56
+        X: =If(Show,559,1400)
+        Y: =24
+        ZIndex: =9
+
+    Label3 As label:
+        Color: |-
+            =ColorValue("#D15070")
+        Fill: =RGBA(209, 80, 112, 0.1)
+        FontWeight: =FontWeight.Semibold
+        Height: =60
+        Size: =25
+        Text: =""
+        Width: =386
+        X: =If(Show,229,1400)
+        Y: =682
+        ZIndex: =10
+
+    Label6 As label:
+        Color: |-
+            =ColorValue("#D15070")
+        FontWeight: =FontWeight.Semibold
+        Height: =60
+        Size: =21
+        Text: ="Settings"
+        Width: =289
+        X: =If(Show,286,1400)
+        Y: =682
+        ZIndex: =11
+
+    Image8 As image:
+        Height: =48
+        Image: ='home-outline (1)'
+        Width: =76
+        X: =If(Show,229,1400)
+        Y: =244
+        ZIndex: =12
+
+    Image9 As image:
+        Height: =48
+        Image: ='keyboard-alt-outline'
+        Width: =76
+        X: =If(Show,231,1400)
+        Y: =390
+        ZIndex: =13
+
+    Image10 As image:
+        Height: =48
+        Image: ='phone-laptop-16-regular'
+        Width: =76
+        X: =If(Show,231,1400)
+        Y: =324
+        ZIndex: =14
+
+    Image11 As image:
+        Height: =48
+        Image: ='page-flip'
+        Width: =76
+        X: =If(Show,231,1400)
+        Y: =595
+        ZIndex: =15
+
