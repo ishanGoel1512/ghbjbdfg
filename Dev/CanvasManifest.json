@@ -102,11 +102,12 @@
     "FileID": "d41f4cf1-7696-42d4-a0e1-a7675d41c10b",
     "Id": "d41f4cf1-7696-42d4-a0e1-a7675d41c10b",
     "InstrumentationKey": "",
-    "Name": "Asset",
+    "LocalDatabaseReferences": "{}",
+    "Name": "Powerapps-revert",
     "OriginatingVersion": "1.329"
   },
   "PublishInfo": {
-    "AppName": "Asset",
+    "AppName": "Powerapps-revert",
     "BackgroundColor": "RGBA(0,176,240,1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "Edit",

@@ -323,5 +323,6 @@ Accessories As screen:
         ZIndex: =7
 
     slidebar_1 As slidebar:
+        Height: =slidebar_1.compHeight
         ZIndex: =8
 
