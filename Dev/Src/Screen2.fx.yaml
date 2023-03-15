@@ -1,0 +1,658 @@
+"Screen2 As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+
+    Canvas1 As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Height: =Parent.Height - Self.Y
+        Width: =Parent.Width
+        Y: =RectQuickActionBar1.Y + RectQuickActionBar1.Height
+        ZIndex: =3
+
+        DataCard1 As dataCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =0
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =1500
+            Width: =Parent.Width
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            htmAssets_1 As htmlViewer:
+                Font: =Font.'Segoe UI'
+                Height: =271
+                HtmlText: |-
+                    ="<div style='
+                    padding: 119px;
+                    font-size: 25px;
+                    color: white;
+                    border-radius: 45px;
+                    background:linear-gradient(308.94deg, #ED8F54 -15.17%, #F57865 51.71%, #F86C64 69.04%, #D15070 136.95%);
+                    box-shadow: 0px 2px 10px rgba(154, 154, 154, 0.28);'
+                    <center>
+                    </center>
+                    </div>"
+                Width: =Parent.Width - 40
+                X: =25
+                Y: =48
+                ZIndex: =1
+
+            lblRecentActvity_1 As label:
+                Color: |-
+                    =RGBA
+                    (209, 80, 112, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =35
+                Size: =18
+                Text: ="Recent Activity"
+                Width: =569
+                X: =25
+                Y: =841
+                ZIndex: =8
+
+            lblAssets_1 As label:
+                Color: =RGBA(255,255, 255, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Size: =23
+                Text: ="Assets"
+                Width: =233
+                X: =122
+                Y: =86
+                ZIndex: =9
+
+            lblReady_1 As label:
+                Color: =RGBA(255,255, 255, 1)
+                Font: =Font.'Segoe UI'
+                Height: =39
+                Size: =17
+                Text: ="Ready To deploy"
+                Width: =191
+                X: =48
+                Y: =211
+                ZIndex: =10
+
+            lblAssigned_1 As label:
+                Color: =RGBA(255,255, 255, 1)
+                Font: =Font.'Segoe UI'
+                Height: =39
+                Size: =17
+                Text: ="Assigned"
+                Width: =106
+                X: =277
+                Y: =211
+                ZIndex: =11
+
+            lblRepair_1 As label:
+                Color: =RGBA(255,255, 255, 1)
+                Font: =Font.'Segoe UI'
+                Height: =39
+                Size: =17
+                Text: ="In Repair"
+                Width: =109
+                X: =447
+                Y: =211
+                ZIndex: =12
+
+            lblValReady_1 As label:
+                Color: =RGBA(255,255,255,1)
+                Font: =Font.'Segoe UI'
+                Height: =73
+                Size: =25
+                Text: ="7"
+                Width: =80
+                X: =119
+                Y: =147
+                ZIndex: =13
+
+            lblValAssigned_1 As label:
+                Color: =RGBA(255,255,255,1)
+                Font: =Font.'Segoe UI'
+                Height: =73
+                Size: =25
+                Text: ="26"
+                Width: =80
+                X: =301
+                Y: =147
+                ZIndex: =14
+
+            lblValinRepair_1 As label:
+                Color: =RGBA(255,255,255,1)
+                Font: =Font.'Segoe UI'
+                Height: =73
+                Size: =25
+                Text: ="6"
+                Width: =80
+                X: =476
+                Y: =147
+                ZIndex: =15
+
+            btnTotalAsset_1 As button:
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(209, 80, 112, 1)
+                DisabledBorderColor: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(255,255,255,1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Normal
+                Height: =43
+                RadiusBottomLeft: =35
+                RadiusBottomRight: =35
+                RadiusTopLeft: =35
+                RadiusTopRight: =35
+                Size: =20
+                Text: ="      Total"
+                Width: =163
+                X: =374
+                Y: =86
+                ZIndex: =28
+
+            lblTotalAssetVal_1 As label:
+                Color: |
+                    =RGBA
+                    (209, 80, 112, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Bold
+                Height: =45
+                Size: =20
+                Text: ="54"
+                Width: =59
+                X: =401
+                Y: =85
+                ZIndex: =29
+
+            Gallery5_1 As gallery.galleryHorizontal:
+                DelayItemLoading: =true
+                Height: =70
+                Items: |-
+                    =Table({ID:1,Label: "Assets"},{ID:2,Label: "Accessories"},{ID:3,Label: "Components"},{ID:4,Label: "Consumables"},{ID:5,Label: "Licenses"})
+                LoadingSpinner: =LoadingSpinner.Data
+                ShowScrollbar: =false
+                TemplatePadding: =2
+                TemplateSize: =147
+                Width: =608
+                X: =5
+                Y: =876
+                ZIndex: =34
+
+                HtmlText2_1 As htmlViewer:
+                    Height: =55
+                    HtmlText: |-
+                        =If(btnHead_1.Color = RGBA(255,255,255,1),
+                        "<div style='
+                        padding: 20px;
+                        font-size: 25px;
+                        color: white;
+                        border-radius: 45px;
+                        background:linear-gradient(308.94deg, #ED8F54 -15.17%, #F57865 51.71%, #F86C64 69.04%, #D15070 136.95%);
+                        box-shadow: 0px 2px 10px rgba(154, 154, 154, 0.28);'
+                        <center>
+                        </center>
+                        </div>",
+                        "<div style='
+                        padding: 20px;
+                        font-size: 25px;
+                        color: white;
+                        border-radius: 45px;
+                        background:rgba(208, 208, 208, 0.22);'
+                        <center>
+                        </center>
+                        </div>"
+                        )
+                    OnSelect: =Select(Parent)
+                    Width: =143
+                    ZIndex: =1
+
+                btnHead_1 As button:
+                    Color: =If(varTabSelected = ThisItem.ID ,RGBA(255, 255, 255, 1), RGBA(158, 158, 158, 1))
+                    Fill: =RGBA(56, 96, 178, 0)
+                    Font: =Font.'Segoe UI'
+                    Height: =48
+                    HoverBorderColor: =
+                    HoverColor: =
+                    HoverFill: =
+                    OnSelect: =Set(varTabSelected,ThisItem.ID)
+                    Size: =13
+                    Text: =ThisItem.Label
+                    Width: =122
+                    X: =10
+                    ZIndex: =2
+
+            Rectangle4_1 As rectangle:
+                Fill: =RGBA(209, 80, 112,0.12)
+                Height: =38
+                Width: =Parent.Width - 80
+                X: =23
+                Y: =945
+                ZIndex: =35
+
+            "'lblDate&Time_1' As label":
+                Color: =RGBA(209, 80, 112, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =58
+                Size: =10
+                Text: ="DATE&TIME"
+                Width: =98
+                X: =98
+                Y: =935
+                ZIndex: =36
+
+            lblName_1 As label:
+                Color: =RGBA(209, 80, 112, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =58
+                Size: =10
+                Text: ="NAME"
+                Width: =98
+                X: =192
+                Y: =935
+                ZIndex: =37
+
+            lblAction_1 As label:
+                Color: =RGBA(209, 80, 112, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =58
+                Size: =10
+                Text: ="ACTION"
+                Width: =98
+                X: =290
+                Y: =935
+                ZIndex: =38
+
+            lblActionBy_1 As label:
+                Color: =RGBA(209, 80, 112, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =58
+                Size: =10
+                Text: ="ACTION BY"
+                Width: =98
+                X: =367
+                Y: =935
+                ZIndex: =39
+
+            lblAssginedTo_1 As label:
+                Color: =RGBA(209, 80, 112, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =58
+                Size: =10
+                Text: ="ASSIGNED TO"
+                Width: =121
+                X: =464
+                Y: =935
+                ZIndex: =40
+
+            grpLicenses_1 As group:
+                Height: =5
+                Width: =5
+                X: =-17
+                Y: =-45
+                ZIndex: =43
+
+                lblLicenses_1 As label:
+                    Color: |-
+                        =RGBA
+                        (209, 80, 112, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =35
+                    Size: =19
+                    Text: |-
+                        ="Licenses
+                        "
+                    Width: =201
+                    X: =422
+                    Y: =599
+                    ZIndex: =7
+
+                lblTotalLicenses_1 As label:
+                    Color: =RGBA(124, 124, 124, 1)
+                    Font: =Font.'Segoe UI'
+                    Height: =46
+                    Size: =17
+                    Text: ="Total"
+                    Width: =140
+                    X: =367
+                    Y: =672
+                    ZIndex: =19
+
+                lblNotAssigned_1 As label:
+                    Color: =RGBA(124, 124, 124, 1)
+                    Font: =Font.'Segoe UI'
+                    Height: =41
+                    Size: =17
+                    Text: ="Not Assigned"
+                    Width: =189
+                    X: =367
+                    Y: =728
+                    ZIndex: =23
+
+                lblTotalLicenVal_1 As label:
+                    Color: |
+                        =RGBA
+                        (209, 80, 112, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =45
+                    Size: =24
+                    Text: ="27"
+                    Width: =59
+                    X: =537
+                    Y: =668
+                    ZIndex: =27
+
+                lblTotalCompVal_3 As label:
+                    Color: |
+                        =RGBA
+                        (209, 80, 112, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =45
+                    Size: =18
+                    Text: ="13"
+                    Width: =59
+                    X: =549
+                    Y: =724
+                    ZIndex: =30
+
+            grpConsumables_1 As group:
+                Height: =5
+                Width: =5
+                X: =-17
+                Y: =-45
+                ZIndex: =44
+
+                lblConsumables_1 As label:
+                    Color: |-
+                        =RGBA
+                        (209, 80, 112, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =35
+                    Size: =19
+                    Text: |-
+                        ="Consumables
+                        "
+                    Width: =201
+                    X: =106
+                    Y: =604
+                    ZIndex: =6
+
+                lblTotalConsumables_1 As label:
+                    Color: =RGBA(124, 124, 124, 1)
+                    Font: =Font.'Segoe UI'
+                    Height: =46
+                    Size: =17
+                    Text: ="Total"
+                    Width: =140
+                    X: =60
+                    Y: =668
+                    ZIndex: =18
+
+                lblOutConsumables_1 As label:
+                    Color: =RGBA(124, 124, 124, 1)
+                    Font: =Font.'Segoe UI'
+                    Height: =41
+                    Size: =17
+                    Text: ="Out of stock"
+                    Width: =189
+                    X: =54
+                    Y: =728
+                    ZIndex: =22
+
+                lblTotalConsumVal_1 As label:
+                    Color: |
+                        =RGBA
+                        (209, 80, 112, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =45
+                    Size: =24
+                    Text: ="27"
+                    Width: =59
+                    X: =237
+                    Y: =668
+                    ZIndex: =26
+
+                lblTotalCompVal_4 As label:
+                    Color: |
+                        =RGBA
+                        (209, 80, 112, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =45
+                    Size: =18
+                    Text: ="13"
+                    Width: =59
+                    X: =248
+                    Y: =728
+                    ZIndex: =31
+
+            grpComponents_1 As group:
+                Height: =5
+                Width: =5
+                X: =-17
+                Y: =-45
+                ZIndex: =45
+
+                lblComponents_1 As label:
+                    Color: |-
+                        =RGBA
+                        (209, 80, 112, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =35
+                    Size: =19
+                    Text: |-
+                        ="Components
+                        "
+                    Width: =201
+                    X: =394
+                    Y: =340
+                    ZIndex: =5
+
+                lblTotalComponents_1 As label:
+                    Color: =RGBA(124, 124, 124, 1)
+                    Font: =Font.'Segoe UI'
+                    Height: =46
+                    Size: =17
+                    Text: ="Total"
+                    Width: =140
+                    X: =347
+                    Y: =412
+                    ZIndex: =17
+
+                lblReadyComp_1 As label:
+                    Color: =RGBA(124, 124, 124, 1)
+                    Font: =Font.'Segoe UI'
+                    Height: =41
+                    Size: =17
+                    Text: ="Ready to Deploy"
+                    Width: =189
+                    X: =347
+                    Y: =474
+                    ZIndex: =21
+
+                lblTotalCompVal_5 As label:
+                    Color: |
+                        =RGBA
+                        (209, 80, 112, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =45
+                    Size: =24
+                    Text: ="27"
+                    Width: =59
+                    X: =536
+                    Y: =407
+                    ZIndex: =25
+
+                lblValReadyComponents_1 As label:
+                    Color: |
+                        =RGBA
+                        (209, 80, 112, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =45
+                    Size: =18
+                    Text: ="13"
+                    Width: =59
+                    X: =548
+                    Y: =474
+                    ZIndex: =32
+
+            grpAccessories_1 As group:
+                Height: =5
+                Width: =5
+                X: =-17
+                Y: =-45
+                ZIndex: =46
+
+                lblAccessories_1 As label:
+                    Color: |-
+                        =RGBA
+                        (209, 80, 112, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =35
+                    Size: =19
+                    Text: ="Accessories"
+                    Width: =201
+                    X: =100
+                    Y: =340
+                    ZIndex: =4
+
+                lblTotalAcc_1 As label:
+                    Color: =RGBA(124, 124, 124, 1)
+                    Font: =Font.'Segoe UI'
+                    Height: =46
+                    Size: =17
+                    Text: ="Total"
+                    Width: =140
+                    X: =59
+                    Y: =405
+                    ZIndex: =16
+
+                lblReadyAcces_1 As label:
+                    Color: =RGBA(124, 124, 124, 1)
+                    Font: =Font.'Segoe UI'
+                    Height: =41
+                    Size: =17
+                    Text: ="Ready to Deploy"
+                    Width: =189
+                    X: =59
+                    Y: =467
+                    ZIndex: =20
+
+                lblTotalAccessVal_1 As label:
+                    Color: |
+                        =RGBA
+                        (209, 80, 112, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =45
+                    Size: =24
+                    Text: ="27"
+                    Width: =59
+                    X: =243
+                    Y: =403
+                    ZIndex: =24
+
+                lblValReadyAccessories_1 As label:
+                    Color: |
+                        =RGBA
+                        (209, 80, 112, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =45
+                    Size: =18
+                    Text: ="13"
+                    Width: =59
+                    X: =260
+                    Y: =470
+                    ZIndex: =33
+
+            grpDisplay4_1 As group:
+                Height: =5
+                Width: =5
+                X: =-17
+                Y: =-45
+                ZIndex: =47
+
+                htxtAccessories_1 As htmlViewer:
+                    Height: =275
+                    HtmlText: |-
+                        ="<div style='
+                        margin:10px;
+                        padding: 125px;
+                        border-radius: 40px;
+                        box-shadow: 0px 2px 10px 0px rgba(154, 154, 154, 0.28);'
+                        </div>"
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Width: =(Parent.Width)/2 - 17
+                    X: |
+                        =17
+                    Y: =292
+                    ZIndex: =2
+
+                htxtComponents_1 As htmlViewer:
+                    Height: =275
+                    HtmlText: |-
+                        ="<div style='
+                        margin:10px;
+                        padding: 125px;
+                        border-radius: 40px;
+                        box-shadow: 0px 2px 10px 0px rgba(154, 154, 154, 0.28);'
+                        </div>"
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Width: |
+                        =(Parent.Width)/2 - 17
+                    X: =(Parent.Width)/2 + 2
+                    Y: =292
+                    ZIndex: =3
+
+                htxtConsumables_1 As htmlViewer:
+                    Height: =275
+                    HtmlText: |-
+                        ="<div style='
+                        margin:10px;
+                        padding: 125px;
+                        border-radius: 40px;
+                        box-shadow: 0px 2px 10px 0px rgba(154, 154, 154, 0.28);'
+                        </div>"
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Width: =(Parent.Width)/2 - 17
+                    X: |
+                        =17
+                    Y: =558
+                    ZIndex: =41
+
+                htxtLicenses_1 As htmlViewer:
+                    Height: =275
+                    HtmlText: |-
+                        ="<div style='
+                        margin:10px;
+                        padding: 125px;
+                        border-radius: 40px;
+                        box-shadow: 0px 2px 10px 0px rgba(154, 154, 154, 0.28);'
+                        </div>"
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Width: |
+                        =(Parent.Width)/2 - 17
+                    X: =(Parent.Width)/2 + 2
+                    Y: =558
+                    ZIndex: =42
+
