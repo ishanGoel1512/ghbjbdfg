@@ -1,5 +1,9 @@
 scrDashboard As screen:
 
+    slidebar_2 As slidebar:
+        Height: =116
+        ZIndex: =37
+
     htmAssets As htmlViewer:
         Font: =Font.'Segoe UI'
         Height: =271
@@ -14,10 +18,10 @@ scrDashboard As screen:
             <center>
             </center>
             </div>"
-        Width: =581
+        Width: =Parent.Width - 40
         X: =27
-        Y: =105
-        ZIndex: =1
+        Y: =141
+        ZIndex: =38
 
     htxtAccessories As htmlViewer:
         Height: =275
@@ -32,10 +36,10 @@ scrDashboard As screen:
         PaddingLeft: =0
         PaddingRight: =0
         PaddingTop: =0
-        Width: =293
+        Width: =(htmAssets.Width)/2
         X: =27
-        Y: =348
-        ZIndex: =2
+        Y: =391
+        ZIndex: =39
 
     htxtComponents As htmlViewer:
         Height: =275
@@ -50,10 +54,10 @@ scrDashboard As screen:
         PaddingLeft: =0
         PaddingRight: =0
         PaddingTop: =0
-        Width: =301
-        X: =317
-        Y: =348
-        ZIndex: =3
+        Width: =(htmAssets.Width)/2
+        X: =(htmAssets.Width)/2+20
+        Y: =391
+        ZIndex: =40
 
     htxtConsumables As htmlViewer:
         Height: =275
@@ -68,10 +72,10 @@ scrDashboard As screen:
         PaddingLeft: =0
         PaddingRight: =0
         PaddingTop: =0
-        Width: =288
+        Width: =(htmAssets.Width)/2
         X: =27
-        Y: =617
-        ZIndex: =4
+        Y: =661
+        ZIndex: =41
 
     htxtLicenses As htmlViewer:
         Height: =281
@@ -86,10 +90,10 @@ scrDashboard As screen:
         PaddingLeft: =0
         PaddingRight: =0
         PaddingTop: =0
-        Width: =301
-        X: =320
-        Y: =617
-        ZIndex: =5
+        Width: =(htmAssets.Width)/2 
+        X: =(htmAssets.Width)/2 + 20
+        Y: =661
+        ZIndex: =42
 
     lblAccessories As label:
         Color: |-
@@ -101,9 +105,9 @@ scrDashboard As screen:
         Size: =19
         Text: ="Accessories"
         Width: =201
-        X: =98
-        Y: =396
-        ZIndex: =6
+        X: =102
+        Y: =424
+        ZIndex: =43
 
     lblComponents As label:
         Color: |-
@@ -117,9 +121,9 @@ scrDashboard As screen:
             ="Components
             "
         Width: =201
-        X: =392
-        Y: =396
-        ZIndex: =7
+        X: =396
+        Y: =424
+        ZIndex: =44
 
     lblConsumables As label:
         Color: |-
@@ -133,9 +137,9 @@ scrDashboard As screen:
             ="Consumables
             "
         Width: =201
-        X: =98
-        Y: =672
-        ZIndex: =8
+        X: =102
+        Y: =700
+        ZIndex: =45
 
     lblLicenses As label:
         Color: |-
@@ -149,9 +153,9 @@ scrDashboard As screen:
             ="Licenses
             "
         Width: =201
-        X: =392
-        Y: =672
-        ZIndex: =9
+        X: =396
+        Y: =700
+        ZIndex: =46
 
     lblRecentActvity As label:
         Color: |-
@@ -163,9 +167,9 @@ scrDashboard As screen:
         Size: =18
         Text: ="Recent Activity"
         Width: =569
-        X: =30
-        Y: =898
-        ZIndex: =10
+        X: =34
+        Y: =926
+        ZIndex: =47
 
     lblAssets As label:
         Color: =RGBA(255,255, 255, 1)
@@ -175,9 +179,9 @@ scrDashboard As screen:
         Size: =23
         Text: ="Assets"
         Width: =233
-        X: =127
-        Y: =143
-        ZIndex: =11
+        X: =131
+        Y: =171
+        ZIndex: =48
 
     lblReady As label:
         Color: =RGBA(255,255, 255, 1)
@@ -186,9 +190,9 @@ scrDashboard As screen:
         Size: =17
         Text: ="Ready To deploy"
         Width: =191
-        X: =53
-        Y: =268
-        ZIndex: =12
+        X: =57
+        Y: =296
+        ZIndex: =49
 
     lblAssigned As label:
         Color: =RGBA(255,255, 255, 1)
@@ -197,9 +201,9 @@ scrDashboard As screen:
         Size: =17
         Text: ="Assigned"
         Width: =106
-        X: =282
-        Y: =268
-        ZIndex: =13
+        X: =286
+        Y: =296
+        ZIndex: =50
 
     lblRepair As label:
         Color: =RGBA(255,255, 255, 1)
@@ -208,9 +212,9 @@ scrDashboard As screen:
         Size: =17
         Text: ="In Repair"
         Width: =109
-        X: =452
-        Y: =268
-        ZIndex: =14
+        X: =456
+        Y: =296
+        ZIndex: =51
 
     lblValReady As label:
         Color: =RGBA(255,255,255,1)
@@ -219,9 +223,9 @@ scrDashboard As screen:
         Size: =25
         Text: ="7"
         Width: =80
-        X: =124
-        Y: =204
-        ZIndex: =15
+        X: =128
+        Y: =232
+        ZIndex: =52
 
     lblValAssigned As label:
         Color: =RGBA(255,255,255,1)
@@ -230,9 +234,9 @@ scrDashboard As screen:
         Size: =25
         Text: ="26"
         Width: =80
-        X: =306
-        Y: =204
-        ZIndex: =16
+        X: =310
+        Y: =232
+        ZIndex: =53
 
     lblValinRepair As label:
         Color: =RGBA(255,255,255,1)
@@ -241,9 +245,9 @@ scrDashboard As screen:
         Size: =25
         Text: ="6"
         Width: =80
-        X: =481
-        Y: =204
-        ZIndex: =17
+        X: =485
+        Y: =232
+        ZIndex: =54
 
     lblTotalAcc As label:
         Color: =RGBA(124, 124, 124, 1)
@@ -252,9 +256,9 @@ scrDashboard As screen:
         Size: =17
         Text: ="Total"
         Width: =140
-        X: =57
-        Y: =461
-        ZIndex: =18
+        X: =61
+        Y: =489
+        ZIndex: =55
 
     lblTotalComponents As label:
         Color: =RGBA(124, 124, 124, 1)
@@ -263,9 +267,9 @@ scrDashboard As screen:
         Size: =17
         Text: ="Total"
         Width: =140
-        X: =345
-        Y: =468
-        ZIndex: =19
+        X: =349
+        Y: =496
+        ZIndex: =56
 
     lblTotalConsumables As label:
         Color: =RGBA(124, 124, 124, 1)
@@ -274,9 +278,9 @@ scrDashboard As screen:
         Size: =17
         Text: ="Total"
         Width: =140
-        X: =57
-        Y: =754
-        ZIndex: =20
+        X: =61
+        Y: =782
+        ZIndex: =57
 
     lblTotalLicenses As label:
         Color: =RGBA(124, 124, 124, 1)
@@ -285,9 +289,9 @@ scrDashboard As screen:
         Size: =17
         Text: ="Total"
         Width: =140
-        X: =364
-        Y: =754
-        ZIndex: =21
+        X: =368
+        Y: =782
+        ZIndex: =58
 
     lblReadyAcces As label:
         Color: =RGBA(124, 124, 124, 1)
@@ -296,9 +300,9 @@ scrDashboard As screen:
         Size: =17
         Text: ="Ready to Deploy"
         Width: =189
-        X: =57
-        Y: =523
-        ZIndex: =22
+        X: =61
+        Y: =551
+        ZIndex: =59
 
     lblReadyComp As label:
         Color: =RGBA(124, 124, 124, 1)
@@ -307,9 +311,9 @@ scrDashboard As screen:
         Size: =17
         Text: ="Ready to Deploy"
         Width: =189
-        X: =345
-        Y: =530
-        ZIndex: =23
+        X: =349
+        Y: =558
+        ZIndex: =60
 
     lblOutConsumables As label:
         Color: =RGBA(124, 124, 124, 1)
@@ -318,9 +322,9 @@ scrDashboard As screen:
         Size: =17
         Text: ="Out of stock"
         Width: =189
-        X: =57
-        Y: =810
-        ZIndex: =24
+        X: =61
+        Y: =838
+        ZIndex: =61
 
     lblNotAssigned As label:
         Color: =RGBA(124, 124, 124, 1)
@@ -329,9 +333,9 @@ scrDashboard As screen:
         Size: =17
         Text: ="Not Assigned"
         Width: =189
-        X: =364
-        Y: =810
-        ZIndex: =25
+        X: =368
+        Y: =838
+        ZIndex: =62
 
     lblTotalAccessVal As label:
         Color: |
@@ -343,9 +347,9 @@ scrDashboard As screen:
         Size: =24
         Text: ="27"
         Width: =59
-        X: =241
-        Y: =459
-        ZIndex: =26
+        X: =245
+        Y: =487
+        ZIndex: =63
 
     lblTotalCompVal As label:
         Color: |
@@ -357,9 +361,9 @@ scrDashboard As screen:
         Size: =24
         Text: ="27"
         Width: =59
-        X: =534
-        Y: =463
-        ZIndex: =27
+        X: =538
+        Y: =491
+        ZIndex: =64
 
     lblTotalConsumVal As label:
         Color: |
@@ -371,9 +375,9 @@ scrDashboard As screen:
         Size: =24
         Text: ="27"
         Width: =59
-        X: =240
-        Y: =750
-        ZIndex: =28
+        X: =244
+        Y: =778
+        ZIndex: =65
 
     lblTotalLicenVal As label:
         Color: |
@@ -385,9 +389,9 @@ scrDashboard As screen:
         Size: =24
         Text: ="27"
         Width: =59
-        X: =534
-        Y: =750
-        ZIndex: =29
+        X: =538
+        Y: =778
+        ZIndex: =66
 
     btnTotalAsset As button:
         BorderStyle: =BorderStyle.None
@@ -404,9 +408,9 @@ scrDashboard As screen:
         Size: =20
         Text: ="      Total"
         Width: =163
-        X: =379
-        Y: =143
-        ZIndex: =30
+        X: =383
+        Y: =171
+        ZIndex: =67
 
     lblTotalAssetVal As label:
         Color: |
@@ -418,9 +422,9 @@ scrDashboard As screen:
         Size: =20
         Text: ="54"
         Width: =59
-        X: =406
-        Y: =142
-        ZIndex: =31
+        X: =410
+        Y: =170
+        ZIndex: =68
 
     lblNotAssignedVal As label:
         Color: |
@@ -432,9 +436,9 @@ scrDashboard As screen:
         Size: =18
         Text: ="13"
         Width: =59
-        X: =546
-        Y: =806
-        ZIndex: =32
+        X: =550
+        Y: =834
+        ZIndex: =69
 
     lblOutofSTockVal As label:
         Color: |
@@ -446,9 +450,9 @@ scrDashboard As screen:
         Size: =18
         Text: ="13"
         Width: =59
-        X: =251
-        Y: =810
-        ZIndex: =33
+        X: =255
+        Y: =838
+        ZIndex: =70
 
     lblReadyDeployComponents As label:
         Color: |
@@ -460,9 +464,9 @@ scrDashboard As screen:
         Size: =18
         Text: ="13"
         Width: =59
-        X: =546
-        Y: =530
-        ZIndex: =34
+        X: =550
+        Y: =558
+        ZIndex: =71
 
     lblReadyDeployAccess As label:
         Color: |
@@ -474,9 +478,9 @@ scrDashboard As screen:
         Size: =18
         Text: ="13"
         Width: =59
-        X: =258
-        Y: =526
-        ZIndex: =35
+        X: =262
+        Y: =554
+        ZIndex: =72
 
     GryRecentActivityTab As gallery.galleryHorizontal:
         DelayItemLoading: =true
@@ -489,8 +493,8 @@ scrDashboard As screen:
         TemplateSize: =147
         Width: =608
         X: =32
-        Y: =933
-        ZIndex: =36
+        Y: =961
+        ZIndex: =73
 
         htxtTabColor As htmlViewer:
             Height: =55
@@ -533,17 +537,13 @@ scrDashboard As screen:
             X: =10
             ZIndex: =2
 
-    slidebar_2 As slidebar:
-        Height: =116
-        ZIndex: =37
-
     recRecentActivity As rectangle:
         Fill: =RGBA(209, 80, 112,0.12)
         Height: =36
         Width: =Parent.Width - 80
-        X: =40
-        Y: =1002
-        ZIndex: =38
+        X: =44
+        Y: =1030
+        ZIndex: =74
 
     "'lblDate&time' As label":
         Color: =RGBA(209, 80, 112, 1)
@@ -552,9 +552,9 @@ scrDashboard As screen:
         Size: =9
         Text: ="DATE&TIME"
         Width: =98
-        X: =103
-        Y: =992
-        ZIndex: =39
+        X: =107
+        Y: =1020
+        ZIndex: =75
 
     lblName As label:
         Color: =RGBA(209, 80, 112, 1)
@@ -563,9 +563,9 @@ scrDashboard As screen:
         Size: =9
         Text: ="NAME"
         Width: =98
-        X: =197
-        Y: =992
-        ZIndex: =40
+        X: =201
+        Y: =1020
+        ZIndex: =76
 
     lblAction As label:
         Color: =RGBA(209, 80, 112, 1)
@@ -574,9 +574,9 @@ scrDashboard As screen:
         Size: =9
         Text: ="ACTION"
         Width: =98
-        X: =282
-        Y: =991
-        ZIndex: =41
+        X: =286
+        Y: =1019
+        ZIndex: =77
 
     lblActionBy As label:
         Color: =RGBA(209, 80, 112, 1)
@@ -585,9 +585,9 @@ scrDashboard As screen:
         Size: =9
         Text: ="ACTION BY"
         Width: =98
-        X: =372
-        Y: =992
-        ZIndex: =42
+        X: =376
+        Y: =1020
+        ZIndex: =78
 
     lblAssignedTo As label:
         Color: =RGBA(209, 80, 112, 1)
@@ -596,7 +596,7 @@ scrDashboard As screen:
         Size: =9
         Text: ="ASSIGNEND TO"
         Width: =121
-        X: =469
-        Y: =992
-        ZIndex: =43
+        X: =473
+        Y: =1020
+        ZIndex: =79
 
