@@ -1,1 +1,43 @@
-{}
+{
+  "effbb60b-7113-44f0-9b2e-1f7f150afbf9": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/juanq/gateway/greyhound/3000.150.11/1.0.1613.3116/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://moderncomms077895.sharepoint.com": {
+        "dataSources": {
+          "Accessories_1": {
+            "tableName": "086c2e02-19ff-42fb-8152-8b832e1cd227"
+          },
+          "Assets": {
+            "tableName": "43a75532-31b1-472b-8a72-cedcde4eb91d"
+          },
+          "Components": {
+            "tableName": "4f1ae383-6cfe-466d-a588-3f4d213af0e2"
+          },
+          "Consumables": {
+            "tableName": "8f8816cd-edef-4311-973d-c064cfaf847c"
+          },
+          "Licenses": {
+            "tableName": "8fabbf11-c41d-44f1-8cd1-fae092de2239"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Accessories_1",
+      "Assets",
+      "Components",
+      "Consumables",
+      "Licenses"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "effbb60b-7113-44f0-9b2e-1f7f150afbf9"
+  }
+}
