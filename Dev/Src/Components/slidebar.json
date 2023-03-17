@@ -45,7 +45,7 @@
         "Name": "HtmlText4",
         "Parent": "slidebar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 274,
+        "PublishOrderIndex": 281,
         "Rules": [
           {
             "Category": "Data",
@@ -208,7 +208,7 @@
         "Name": "HtmlText6",
         "Parent": "slidebar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 275,
+        "PublishOrderIndex": 282,
         "Rules": [
           {
             "Category": "Data",
@@ -394,7 +394,7 @@
         "Name": "Label2",
         "Parent": "slidebar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 276,
+        "PublishOrderIndex": 283,
         "Rules": [
           {
             "Category": "Data",
@@ -710,7 +710,7 @@
         "Name": "Icon4",
         "Parent": "slidebar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 277,
+        "PublishOrderIndex": 284,
         "Rules": [
           {
             "Category": "Design",
@@ -929,7 +929,7 @@
         "Name": "Icon2",
         "Parent": "slidebar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 278,
+        "PublishOrderIndex": 285,
         "Rules": [
           {
             "Category": "Design",
@@ -1156,7 +1156,7 @@
         "Name": "Label26",
         "Parent": "slidebar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 279,
+        "PublishOrderIndex": 286,
         "Rules": [
           {
             "Category": "Data",
@@ -1433,7 +1433,7 @@
             "Name": "galleryTemplate2",
             "Parent": "Gallery2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 281,
+            "PublishOrderIndex": 288,
             "Rules": [
               {
                 "Category": "Data",
@@ -1535,7 +1535,7 @@
             "Name": "Label4",
             "Parent": "Gallery2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 282,
+            "PublishOrderIndex": 289,
             "Rules": [
               {
                 "Category": "Data",
@@ -1860,7 +1860,7 @@
             "Name": "Title2",
             "Parent": "Gallery2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 283,
+            "PublishOrderIndex": 290,
             "Rules": [
               {
                 "Category": "Data",
@@ -2135,7 +2135,7 @@
             "Name": "Subtitle2",
             "Parent": "Gallery2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 284,
+            "PublishOrderIndex": 291,
             "Rules": [
               {
                 "Category": "Data",
@@ -2420,7 +2420,7 @@
         "Name": "Gallery2",
         "Parent": "slidebar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 280,
+        "PublishOrderIndex": 287,
         "Rules": [
           {
             "Category": "Data",
@@ -2650,7 +2650,7 @@
         "Name": "Image8",
         "Parent": "slidebar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 285,
+        "PublishOrderIndex": 292,
         "Rules": [
           {
             "Category": "Data",
@@ -2918,7 +2918,7 @@
         "Name": "Image10",
         "Parent": "slidebar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 286,
+        "PublishOrderIndex": 293,
         "Rules": [
           {
             "Category": "Data",
@@ -3186,7 +3186,7 @@
         "Name": "Image9",
         "Parent": "slidebar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 287,
+        "PublishOrderIndex": 294,
         "Rules": [
           {
             "Category": "Data",
@@ -3454,7 +3454,7 @@
         "Name": "Image11",
         "Parent": "slidebar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 288,
+        "PublishOrderIndex": 295,
         "Rules": [
           {
             "Category": "Data",
@@ -3694,7 +3694,7 @@
         "Name": "Rectangle1",
         "Parent": "slidebar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 289,
+        "PublishOrderIndex": 296,
         "Rules": [
           {
             "Category": "Design",
@@ -3902,7 +3902,7 @@
         "Name": "Label3",
         "Parent": "slidebar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 290,
+        "PublishOrderIndex": 297,
         "Rules": [
           {
             "Category": "Data",
@@ -4233,7 +4233,7 @@
         "Name": "Label6",
         "Parent": "slidebar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 291,
+        "PublishOrderIndex": 298,
         "Rules": [
           {
             "Category": "Data",
@@ -4510,7 +4510,7 @@
             "Name": "galleryTemplate3",
             "Parent": "Gallery3",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 293,
+            "PublishOrderIndex": 300,
             "Rules": [
               {
                 "Category": "Data",
@@ -4612,7 +4612,7 @@
             "Name": "Label5",
             "Parent": "Gallery3",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 294,
+            "PublishOrderIndex": 301,
             "Rules": [
               {
                 "Category": "Data",
@@ -4944,7 +4944,7 @@
             "Name": "Title3",
             "Parent": "Gallery3",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 295,
+            "PublishOrderIndex": 302,
             "Rules": [
               {
                 "Category": "Data",
@@ -5226,7 +5226,7 @@
             "Name": "Subtitle3",
             "Parent": "Gallery3",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 296,
+            "PublishOrderIndex": 303,
             "Rules": [
               {
                 "Category": "Data",
@@ -5518,7 +5518,7 @@
         "Name": "Gallery3",
         "Parent": "slidebar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 292,
+        "PublishOrderIndex": 299,
         "Rules": [
           {
             "Category": "Data",
@@ -5779,7 +5779,7 @@
         "Name": "Label7",
         "Parent": "slidebar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 297,
+        "PublishOrderIndex": 304,
         "Rules": [
           {
             "Category": "Data",
@@ -6079,7 +6079,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638146706933404449",
+    "LastModifiedTimestamp": "638146727663757569",
     "Name": "slidebar",
     "Rules": [
       {
@@ -6175,7 +6175,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638146706933404449",
+  "LastModifiedTimestamp": "638146727663757569",
   "Name": "3af15ece54f0443db16d93804a12243c",
   "OverridableProperties": {},
   "Version": "638140580891017913"

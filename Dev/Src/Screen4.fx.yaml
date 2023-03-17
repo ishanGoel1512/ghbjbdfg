@@ -14,6 +14,79 @@ Screen4 As screen:
         Y: =32
         ZIndex: =1
 
+    "Gallery4 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
+        Items: =data
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =Min(168, Self.Height - 60)
+        Y: =475
+        ZIndex: =1
+
+        Title5 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Action
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =16
+            ZIndex: =1
+
+        Subtitle5 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.ComplianceAssetId
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =Title5.Y + Title5.Height + 2
+            ZIndex: =2
+
+        Body1 As label:
+            Height: =Self.Size * 4
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Title
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =Subtitle5.Y + Subtitle5.Height + 4
+            ZIndex: =3
+
+        NextArrow3 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =60
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =60
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =4
+
+        Separator4 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
     glyRecentActTABS_1 As gallery.galleryHorizontal:
         DelayItemLoading: =true
         Height: =63
@@ -160,7 +233,7 @@ Screen4 As screen:
         ZIndex: =9
 
     glyDBRecentActivityData As gallery.galleryVertical:
-        Height: =622
+        Height: =195
         Items: =data
         Layout: =Layout.Vertical
         ShowScrollbar: =false
@@ -202,8 +275,8 @@ Screen4 As screen:
             Height: =50
             OnSelect: =Select(Parent)
             Size: =14
-            Text: =
-            Width: =84
+            Text: =ThisItem.Date
+            Width: =99
             X: =61
             Y: =24
             ZIndex: =3
@@ -214,7 +287,7 @@ Screen4 As screen:
             Height: =28
             OnSelect: =Select(Parent)
             Size: =14
-            Text: ="Name"
+            Text: =ThisItem.'{Name}'
             Width: =87
             X: =160
             Y: =28
@@ -223,11 +296,11 @@ Screen4 As screen:
         lblDBRecentAction As label:
             Color: =RGBA(124, 124, 124, 1)
             Font: =Font.'Segoe UI'
-            Height: =28
+            Height: =46
             OnSelect: =Select(Parent)
             Size: =14
-            Text: ="Update"
-            Width: =87
+            Text: =ThisItem.Action
+            Width: =99
             X: =247
             Y: =28
             ZIndex: =5
@@ -238,7 +311,7 @@ Screen4 As screen:
             Height: =28
             OnSelect: =Select(Parent)
             Size: =14
-            Text: ="Person"
+            Text: =ThisItem.ActionBy.DisplayName
             Width: =103
             X: =346
             Y: =28
@@ -249,7 +322,7 @@ Screen4 As screen:
             Height: =28
             OnSelect: =Select(Parent)
             Size: =14
-            Text: =If(varTabSelected = 4 || varTabSelected = 5,"","Person")
+            Text: =If(varTabSelected = 4 || varTabSelected = 5,"",ThisItem.AssignedTo.DisplayName)
             Width: =110
             X: =449
             Y: =28
