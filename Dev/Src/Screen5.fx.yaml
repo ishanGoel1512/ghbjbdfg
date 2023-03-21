@@ -1,0 +1,521 @@
+Screen5 As screen:
+
+    glyDBACCESSRecentActivityData As gallery.galleryVertical:
+        Height: =547
+        Items: =Sort('Accessory Inventory Flow',Modified,SortOrder.Descending)
+        Layout: =Layout.Vertical
+        ShowScrollbar: =false
+        TemplateSize: =92
+        Visible: =If(varTabSelected = 2 , true , false)
+        Width: =rctRecentActivi9tyDataHeadings.Width
+        X: =40
+        Y: =589
+        ZIndex: =1
+
+        btnDBClickableACC As button:
+            BorderColor: =
+            BorderStyle: =
+            BorderThickness: =
+            Fill: =RGBA(255, 255,255, 1)
+            Height: =84
+            HoverBorderColor: =
+            HoverColor: =
+            HoverFill: =
+            OnSelect: =Select(Parent)
+            Size: =24
+            Text: =
+            Width: =570
+            ZIndex: =1
+
+        imgDBRecentActivityPicACC As image:
+            Height: =47
+            Image: =
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =47
+            RadiusBottomRight: =47
+            RadiusTopLeft: =47
+            RadiusTopRight: =47
+            Width: =47
+            Y: =16
+            ZIndex: =2
+
+        "'lblDBRecentActivityDate&TimeACC' As label":
+            Color: =RGBA(124, 124, 124, 1)
+            Height: =50
+            OnSelect: =Select(Parent)
+            Size: =14
+            Text: =ThisItem.Modified
+            Width: =99
+            X: =61
+            Y: =21
+            ZIndex: =3
+
+        lblDBRecentNameACC As label:
+            Color: =RGBA(124, 124, 124, 1)
+            Font: =Font.'Segoe UI'
+            Height: =28
+            OnSelect: =Select(Parent)
+            Size: =14
+            Text: |
+                =ThisItem.'Accessory Name'
+            Width: =87
+            X: =160
+            Y: =35
+            ZIndex: =4
+
+        lblDBRecentActionACC As label:
+            Color: =RGBA(124, 124, 124, 1)
+            Font: =Font.'Segoe UI'
+            Height: =46
+            OnSelect: =Select(Parent)
+            Size: =14
+            Text: =ThisItem.Status
+            Width: =99
+            X: =235
+            Y: =26
+            ZIndex: =5
+
+        lblDBRecentActionByACC As label:
+            Color: =RGBA(124, 124, 124, 1)
+            Font: =Font.'Segoe UI'
+            Height: =28
+            OnSelect: =Select(Parent)
+            Size: =14
+            Text: =ThisItem.'Modified By'.DisplayName
+            Width: =103
+            X: =346
+            Y: =37
+            ZIndex: =6
+
+        lblDBRecentAssignedToACC As label:
+            Color: =RGBA(124, 124, 124, 1)
+            Height: =28
+            OnSelect: =Select(Parent)
+            Size: =14
+            Text: =If(ThisItem.Status = "Assigned",ThisItem.'Assigned To'.DisplayName,"")
+            Width: =110
+            X: =449
+            Y: =35
+            ZIndex: =7
+
+    glyDBCOMPRecentActivityData As gallery.galleryVertical:
+        Height: =547
+        Items: =Sort(Components,Modified,SortOrder.Descending)
+        Layout: =Layout.Vertical
+        ShowScrollbar: =false
+        TemplateSize: =92
+        Visible: =If(varTabSelected = 3 , true , false)
+        Width: =rctRecentActivi9tyDataHeadings.Width
+        X: =40
+        Y: =589
+        ZIndex: =2
+
+        btnDBClickableACOM As button:
+            BorderColor: =
+            BorderStyle: =
+            BorderThickness: =
+            Fill: =RGBA(255, 255,255, 1)
+            Height: =84
+            HoverBorderColor: =
+            HoverColor: =
+            HoverFill: =
+            OnSelect: =ThisItem.Image
+            Size: =24
+            Text: =
+            Width: =570
+            ZIndex: =1
+
+        imgDBRecentActivityPicCOM As image:
+            Height: =47
+            Image: |-
+                =
+                If(varTabSelected = 2,ThisItem.Image)
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =47
+            RadiusBottomRight: =47
+            RadiusTopLeft: =47
+            RadiusTopRight: =47
+            Width: =47
+            Y: =16
+            ZIndex: =2
+
+        "'lblDBRecentActivityDate&TimeCOM' As label":
+            Color: =RGBA(124, 124, 124, 1)
+            Height: =50
+            OnSelect: =Select(Parent)
+            Size: =14
+            Text: =ThisItem.Modified
+            Width: =99
+            X: =61
+            Y: =21
+            ZIndex: =3
+
+        lblDBRecentNameACOM As label:
+            Color: =RGBA(124, 124, 124, 1)
+            Font: =Font.'Segoe UI'
+            Height: =28
+            OnSelect: =Select(Parent)
+            Size: =14
+            Text: |
+                =ThisItem.Title
+            Width: =87
+            X: =160
+            Y: =35
+            ZIndex: =4
+
+        lblDBRecentActionCOM As label:
+            Color: =RGBA(124, 124, 124, 1)
+            Font: =Font.'Segoe UI'
+            Height: =46
+            OnSelect: =Select(Parent)
+            Size: =14
+            Text: =ThisItem.Status
+            Width: =99
+            X: =235
+            Y: =26
+            ZIndex: =5
+
+        lblDBRecentActionByACOM As label:
+            Color: =RGBA(124, 124, 124, 1)
+            Font: =Font.'Segoe UI'
+            Height: =28
+            OnSelect: =Select(Parent)
+            Size: =14
+            Text: =ThisItem.'Modified By'.DisplayName
+            Width: =103
+            X: =346
+            Y: =37
+            ZIndex: =6
+
+        lblDBRecentAssignedToCOM As label:
+            Color: =RGBA(124, 124, 124, 1)
+            Height: =28
+            OnSelect: =Select(Parent)
+            Size: =14
+            Text: =
+            Width: =110
+            X: =449
+            Y: =35
+            ZIndex: =7
+
+    glyDBCONSUMecentActivityData As gallery.galleryVertical:
+        Height: =547
+        Items: =Sort('Consumable Inventory Flow',Modified,SortOrder.Descending)
+        Layout: =Layout.Vertical
+        ShowScrollbar: =false
+        TemplateSize: =92
+        Visible: =If(varTabSelected = 4 , true , false)
+        Width: =rctRecentActivi9tyDataHeadings.Width
+        X: =40
+        Y: =589
+        ZIndex: =3
+
+        btnDBClickableACONS As button:
+            BorderColor: =
+            BorderStyle: =
+            BorderThickness: =
+            Fill: =RGBA(255, 255,255, 1)
+            Height: =84
+            HoverBorderColor: =
+            HoverColor: =
+            HoverFill: =
+            OnSelect: =Select(Parent)
+            Size: =24
+            Text: =
+            Width: =570
+            ZIndex: =1
+
+        imgDBRecentActivityPicCONS As image:
+            Height: =47
+            Image: =//ThisItem.'Lookup-Consumables'.Id
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =47
+            RadiusBottomRight: =47
+            RadiusTopLeft: =47
+            RadiusTopRight: =47
+            Width: =47
+            Y: =16
+            ZIndex: =2
+
+        "'lblDBRecentActivityDate&TimeCONS' As label":
+            Color: =RGBA(124, 124, 124, 1)
+            Height: =50
+            OnSelect: =Select(Parent)
+            Size: =14
+            Text: =ThisItem.Modified
+            Width: =99
+            X: =61
+            Y: =21
+            ZIndex: =3
+
+        lblDBRecentNameCONS As label:
+            Color: =RGBA(124, 124, 124, 1)
+            Font: =Font.'Segoe UI'
+            Height: =28
+            OnSelect: =Select(Parent)
+            Size: =14
+            Text: |
+                =ThisItem.Title
+            Width: =87
+            X: =160
+            Y: =35
+            ZIndex: =4
+
+        lblDBRecentActionCONS As label:
+            Color: =RGBA(124, 124, 124, 1)
+            Font: =Font.'Segoe UI'
+            Height: =46
+            OnSelect: =Select(Parent)
+            Size: =14
+            Text: =ThisItem.Status
+            Width: =99
+            X: =235
+            Y: =26
+            ZIndex: =5
+
+        lblDBRecentActionByCONS As label:
+            Color: =RGBA(124, 124, 124, 1)
+            Font: =Font.'Segoe UI'
+            Height: =28
+            OnSelect: =Select(Parent)
+            Size: =14
+            Text: =ThisItem.'Modified By'.DisplayName
+            Width: =103
+            X: =346
+            Y: =37
+            ZIndex: =6
+
+    glyDBLICENRecentActivityData As gallery.galleryVertical:
+        Height: =547
+        Items: =Sort(Licenses,Modified,SortOrder.Descending)
+        Layout: =Layout.Vertical
+        ShowScrollbar: =false
+        TemplateSize: =92
+        Visible: =If(varTabSelected = 5 , true , false)
+        Width: =rctRecentActivi9tyDataHeadings.Width
+        X: =52
+        Y: =589
+        ZIndex: =4
+
+        btnDBClickableLIC As button:
+            BorderColor: =
+            BorderStyle: =
+            BorderThickness: =
+            Fill: =RGBA(255, 255,255, 1)
+            Height: =84
+            HoverBorderColor: =
+            HoverColor: =
+            HoverFill: =
+            OnSelect: =Select(Parent)
+            Size: =24
+            Text: =
+            Width: =570
+            ZIndex: =1
+
+        lblDBRecentActivitYNameLIC As label:
+            Color: =RGBA(124, 124, 124, 1)
+            Height: =50
+            OnSelect: =Select(Parent)
+            Size: =14
+            Text: =ThisItem.'Expiration Date'
+            Width: =99
+            X: =61
+            Y: =21
+            ZIndex: =3
+
+        lblDBRecentExpiraDateLIC As label:
+            Color: =RGBA(124, 124, 124, 1)
+            Font: =Font.'Segoe UI'
+            Height: =28
+            OnSelect: =Select(Parent)
+            Size: =14
+            Text: =ThisItem.Title
+            Width: =87
+            X: =160
+            Y: =35
+            ZIndex: =4
+
+        lblDBRecentSUBSDurLIC As label:
+            Color: =RGBA(124, 124, 124, 1)
+            Font: =Font.'Segoe UI'
+            Height: =46
+            OnSelect: =Select(Parent)
+            Size: =14
+            Text: =ThisItem.Category
+            Width: =99
+            X: =235
+            Y: =26
+            ZIndex: =5
+
+        lblDBRecentCategoryLIC As label:
+            Color: =RGBA(124, 124, 124, 1)
+            Font: =Font.'Segoe UI'
+            Height: =28
+            OnSelect: =Select(Parent)
+            Size: =14
+            Text: =ThisItem.'Subscription Duration'
+            Width: =103
+            X: =346
+            Y: =37
+            ZIndex: =6
+
+    glyDBASSETRecentActivityData As gallery.galleryVertical:
+        Height: =547
+        Items: =Sort(Assets,Modified,SortOrder.Descending)
+        Layout: =Layout.Vertical
+        ShowScrollbar: =false
+        TemplateSize: =92
+        Visible: =If(varTabSelected = 1 , true , false)
+        Width: =rctRecentActivi9tyDataHeadings.Width
+        X: =40
+        Y: =589
+        ZIndex: =5
+
+        btnDBClickableASSET As button:
+            BorderColor: =
+            BorderStyle: =
+            BorderThickness: =
+            Fill: =RGBA(255, 255,255, 1)
+            Height: =84
+            HoverBorderColor: =
+            HoverColor: =
+            HoverFill: =
+            OnSelect: =Select(Parent)
+            Size: =24
+            Text: =
+            Width: =570
+            ZIndex: =1
+
+        imgDBRecentActivityPicASSET As image:
+            Height: =47
+            Image: =ThisItem.Image
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =47
+            RadiusBottomRight: =47
+            RadiusTopLeft: =47
+            RadiusTopRight: =47
+            Width: =47
+            Y: =16
+            ZIndex: =2
+
+        "'lblDBRecentActivityDate&TimeASSET' As label":
+            Color: =RGBA(124, 124, 124, 1)
+            Height: =50
+            OnSelect: =Select(Parent)
+            Size: =14
+            Text: =ThisItem.Modified
+            Width: =99
+            X: =61
+            Y: =21
+            ZIndex: =3
+
+        lblDBRecentNameASSET As label:
+            Color: =RGBA(124, 124, 124, 1)
+            Font: =Font.'Segoe UI'
+            Height: =28
+            OnSelect: =Select(Parent)
+            Size: =14
+            Text: |
+                =ThisItem.'Asset Name'
+            Width: =87
+            X: =160
+            Y: =35
+            ZIndex: =4
+
+        lblDBRecentActionASSET As label:
+            Color: =RGBA(124, 124, 124, 1)
+            Font: =Font.'Segoe UI'
+            Height: =46
+            OnSelect: =Select(Parent)
+            Size: =14
+            Text: =ThisItem.Status
+            Width: =99
+            X: =235
+            Y: =26
+            ZIndex: =5
+
+        lblDBRecentActionByASSET As label:
+            Color: =RGBA(124, 124, 124, 1)
+            Font: =Font.'Segoe UI'
+            Height: =28
+            OnSelect: =Select(Parent)
+            Size: =14
+            Text: =ThisItem.'Modified By'.DisplayName
+            Width: =103
+            X: =346
+            Y: =37
+            ZIndex: =6
+
+        lblDBRecentAssignedToASSET As label:
+            Color: =RGBA(124, 124, 124, 1)
+            Height: =28
+            OnSelect: =Select(Parent)
+            Size: =14
+            Text: =//If(ThisItem.Status = "Assigned",ThisItem.'Assigned To'.DisplayName,"")
+            Width: =110
+            X: =449
+            Y: =35
+            ZIndex: =7
+
+    glyConsumImage As gallery.galleryVertical:
+        DelayItemLoading: =true
+        Height: =glyDBCONSUMecentActivityData.Height
+        Items: =Sort(Consumables,Modified,SortOrder.Descending)
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        ShowScrollbar: =false
+        TemplateSize: =58
+        Visible: =glyDBCONSUMecentActivityData.Visible
+        Width: =82
+        X: =50
+        Y: =40
+        ZIndex: =6
+
+        imgDBRecentActivityConsum As image:
+            Height: =36
+            Image: =ThisItem.Image
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =50
+            RadiusBottomRight: =50
+            RadiusTopLeft: =50
+            RadiusTopRight: =50
+            Width: =37
+            X: =4
+            Y: =12
+            ZIndex: =1
+
+    glyAccessoriesImage As gallery.galleryVertical:
+        DelayItemLoading: =true
+        Height: =glyDBACCESSRecentActivityData.Height
+        Items: =Sort(Accessories,Modified,SortOrder.Descending)
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        ShowScrollbar: =false
+        TemplateSize: =58
+        Visible: =glyDBACCESSRecentActivityData.Visible
+        Width: =82
+        X: =45
+        Y: =589
+        ZIndex: =7
+
+        imgDBRecentActivityAccess As image:
+            Height: =36
+            Image: =ThisItem.Image
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =50
+            RadiusBottomRight: =50
+            RadiusTopLeft: =50
+            RadiusTopRight: =50
+            Width: =37
+            X: =4
+            Y: =12
+            ZIndex: =1
+
+    imgDBImageIconRecent As image:
+        Height: =18
+        Image: ='image icon red'
+        Width: =20
+        X: =58
+        Y: =1017
+        ZIndex: =8
+

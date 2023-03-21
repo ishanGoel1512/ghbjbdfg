@@ -6079,7 +6079,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638146727663757569",
+    "LastModifiedTimestamp": "638149970477849516",
     "Name": "slidebar",
     "Rules": [
       {
@@ -6175,7 +6175,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638146727663757569",
+  "LastModifiedTimestamp": "638149970477849516",
   "Name": "3af15ece54f0443db16d93804a12243c",
   "OverridableProperties": {},
   "Version": "638140580891017913"

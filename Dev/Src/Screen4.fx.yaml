@@ -234,8 +234,9 @@ Screen4 As screen:
 
     glyDBRecentActivityData As gallery.galleryVertical:
         Height: =195
-        Items: =data
+        Items: =Sort(data,Modified,SortOrder.Descending)
         Layout: =Layout.Vertical
+        OnSelect: =
         ShowScrollbar: =false
         TemplateSize: =92
         Width: =rctRecentActivi9tyDataHeadings.Width
@@ -287,10 +288,15 @@ Screen4 As screen:
             Height: =28
             OnSelect: =Select(Parent)
             Size: =14
-            Text: =ThisItem.'{Name}'
+            Text: |
+                =If(varTabSelected = 1 ,ThisItem.Testing);
+                If(varTabSelected = 2 ,ThisItem.'{Name}');
+                If(varTabSelected = 3 ,ThisItem.'{Name}');
+                If(varTabSelected = 4 ,ThisItem.'{Name}');
+                If(varTabSelected = 5 ,ThisItem.'{Name}');
             Width: =87
             X: =160
-            Y: =28
+            Y: =37
             ZIndex: =4
 
         lblDBRecentAction As label:
