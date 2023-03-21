@@ -2286,6 +2286,46 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Screen4.imgDBImageIconRecent_1.Image"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen4.imgDBImageIconRecent_1.Image",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 16,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "'image icon red'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Image",
+                "module": "Screen4",
+                "type": "Screen4.imgDBImageIconRecent_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "image icon red"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "slidebar.Icon4.AccessibleLabel"
                 }
               ],
