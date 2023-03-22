@@ -1,0 +1,428 @@
+Screen6 As screen:
+
+    glyLCDtab As gallery.galleryHorizontal:
+        DelayItemLoading: =true
+        Height: =85
+        Items: |-
+            =Table({ID:1,Label: "INFO"},{ID:2,Label: "ASSIGNMENTS"})
+        LoadingSpinner: =LoadingSpinner.Data
+        ShowScrollbar: =false
+        TemplateSize: =328
+        Y: =40
+        ZIndex: =1
+
+        btnLCDAssignments As button:
+            BorderStyle: =BorderStyle.None
+            Color: =If(ThisItem.IsSelected,RGBA(209, 80, 112, 1),RGBA(0,0,0,0.7))
+            Fill: =RGBA(255,255,255, 1)
+            Height: =56
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =13
+            Text: =ThisItem.Label
+            Width: =295
+            ZIndex: =1
+
+        rctLCDInfoLine As rectangle:
+            Fill: =If(ThisItem.IsSelected,RGBA(209, 80, 112, 1),RGBA(0,0,0,0.07))
+            Height: =3
+            Width: =328
+            Y: =53
+            ZIndex: =2
+
+    htmLCDInfoShadow As htmlViewer:
+        Height: =765
+        HtmlText: |-
+            ="<div style='background: #FFFFFF;
+            height:715px;
+            width:570px;
+            box-shadow: 0px 0px 16px -7px rgba(0,0,0,0.75);
+            border-radius: 10px;
+            margin-left:10px;
+            margin-top:10px;
+            '></div>"
+        Width: =620
+        X: =20
+        Y: =112
+        ZIndex: =2
+
+    btnLCDBackGround As button:
+        BorderStyle: =BorderStyle.None
+        Fill: =RGBA(249, 234, 237, 1)
+        Height: =168
+        HoverBorderColor: =RGBA(249, 234, 237, 1)
+        HoverColor: =RGBA(249, 234, 237, 1)
+        HoverFill: =RGBA(249, 234, 237, 1)
+        RadiusBottomLeft: =
+        RadiusBottomRight: |+
+            =0
+            
+        Size: =24
+        Text: =
+        Width: =570
+        X: =70
+        Y: =125
+        ZIndex: =3
+
+    lblLCDLicName As label:
+        Color: =RGBA(209, 80, 112, 1)
+        FontWeight: =FontWeight.Bold
+        Size: =19
+        Text: ="Canva Pro License"
+        Width: =241
+        X: =96
+        Y: =140
+        ZIndex: =4
+
+    lblLCDCompany As label:
+        Color: =RGBA(209, 80, 112, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =32
+        Size: =16
+        Text: ="Canva"
+        Width: =241
+        X: =96
+        Y: =180
+        ZIndex: =5
+
+    lblLCDLicKey As label:
+        Color: =RGBA(209, 80, 112, 1)
+        FontWeight: =FontWeight.Semibold
+        Size: =17
+        Text: ="HHSD8S8843343"
+        Width: =241
+        X: =96
+        Y: =212
+        ZIndex: =6
+
+    lblLCDExpirationDate As label:
+        Color: =RGBA(209, 80, 112, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =27
+        Size: =12
+        Text: ="Expiration Date"
+        Width: =152
+        X: =116
+        Y: =316
+        ZIndex: =7
+
+    lblLCDSubDur As label:
+        Color: =RGBA(209, 80, 112, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =44
+        Size: =12
+        Text: ="Subscription Duration"
+        Width: =152
+        X: =116
+        Y: =391
+        ZIndex: =8
+
+    lblLCDTotaAssnmts As label:
+        Color: =RGBA(209, 80, 112, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =27
+        Size: =12
+        Text: ="Total Assignments"
+        Width: =152
+        X: =116
+        Y: =473
+        ZIndex: =9
+
+    lblLCDPurchaseCost As label:
+        Color: =RGBA(209, 80, 112, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =27
+        Size: =12
+        Text: |-
+            ="Purchase Cost
+            "
+        Width: =152
+        X: =116
+        Y: =561
+        ZIndex: =10
+
+    lblLCDVALExpDate As label:
+        Color: =RGBA(0,0,0,0.5)
+        FontWeight: =FontWeight.Semibold
+        Height: =27
+        Size: =12
+        Text: |-
+            ="Serial Number
+            "
+        Width: =152
+        X: =116
+        Y: =333
+        ZIndex: =11
+
+    lblLCDVALSubsDur As label:
+        Color: =RGBA(0,0,0,0.5)
+        FontWeight: =FontWeight.Semibold
+        Height: =27
+        Size: =12
+        Text: |-
+            ="Mohali HQ
+            "
+        Width: =152
+        X: =116
+        Y: =428
+        ZIndex: =12
+
+    lblLCDVALTotalAssn As label:
+        Color: =RGBA(0,0,0,0.5)
+        FontWeight: =FontWeight.Semibold
+        Height: =27
+        Size: =12
+        Text: |-
+            ="Mohali HQ
+            "
+        Width: =152
+        X: =116
+        Y: =494
+        ZIndex: =13
+
+    lblLCDVALPurchaseCost As label:
+        Color: =RGBA(0,0,0,0.5)
+        FontWeight: =FontWeight.Semibold
+        Height: =27
+        Size: =12
+        Text: |-
+            ="Mohali HQ
+            "
+        Width: =152
+        X: =116
+        Y: =579
+        ZIndex: =14
+
+    lblLCDUsername As label:
+        Color: =RGBA(209, 80, 112, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =27
+        Size: =12
+        Text: |-
+            ="Username
+            "
+        Width: =152
+        X: =308
+        Y: =316
+        ZIndex: =15
+
+    lblLCDCategory As label:
+        Color: =RGBA(209, 80, 112, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =25
+        Size: =12
+        Text: ="Category"
+        Width: =120
+        X: =308
+        Y: =391
+        ZIndex: =16
+
+    lblLCDRemainAssnments As label:
+        Color: =RGBA(209, 80, 112, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =48
+        Size: =12
+        Text: ="Remaining Assignments"
+        Width: =152
+        X: =308
+        Y: =473
+        ZIndex: =17
+
+    lblLCDPurchaseDate As label:
+        Color: =RGBA(209, 80, 112, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =27
+        Size: =12
+        Text: |-
+            ="Purchase Date
+            "
+        Width: =152
+        X: =308
+        Y: =561
+        ZIndex: =18
+
+    lblLCDVALUsername As label:
+        Color: =RGBA(0,0,0,0.5)
+        FontWeight: =FontWeight.Semibold
+        Height: =27
+        Size: =12
+        Text: |-
+            ="Latitude 5531
+            "
+        Width: =152
+        X: =308
+        Y: =333
+        ZIndex: =19
+
+    lblLCDVALCategory As label:
+        Color: =RGBA(0,0,0,0.5)
+        FontWeight: =FontWeight.Semibold
+        Height: =27
+        Size: =12
+        Text: |-
+            ="Ready to deploy
+            "
+        Width: =152
+        X: =308
+        Y: =408
+        ZIndex: =20
+
+    lblLCDVALRemainingAssn As label:
+        Color: =RGBA(0,0,0,0.5)
+        FontWeight: =FontWeight.Semibold
+        Height: =27
+        Size: =12
+        Text: |-
+            ="Ready to deploy
+            "
+        Width: =152
+        X: =308
+        Y: =513
+        ZIndex: =21
+
+    lblLCDVALPurchaseDate As label:
+        Color: =RGBA(0,0,0,0.5)
+        FontWeight: =FontWeight.Semibold
+        Height: =27
+        Size: =12
+        Text: |-
+            ="Dell
+            "
+        Width: =152
+        X: =308
+        Y: =579
+        ZIndex: =22
+
+    lblLCDPassord As label:
+        Color: =RGBA(209, 80, 112, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =27
+        Size: =12
+        Text: |-
+            ="Password
+            "
+        Width: =152
+        X: =474
+        Y: =316
+        ZIndex: =23
+
+    lblLCDStatus As label:
+        Color: =RGBA(209, 80, 112, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =25
+        Size: =12
+        Text: |-
+            ="Status
+            "
+        Width: =138
+        X: =474
+        Y: =391
+        ZIndex: =24
+
+    lblLCDVALPassword As label:
+        Color: =RGBA(0,0,0,0.5)
+        FontWeight: =FontWeight.Semibold
+        Height: =27
+        Size: =12
+        Text: |-
+            ="Laptops
+            "
+        Width: =152
+        X: =474
+        Y: =333
+        ZIndex: =25
+
+    lblLCDVALStatus As label:
+        Color: =RGBA(0,0,0,0.5)
+        FontWeight: =FontWeight.Semibold
+        Height: =27
+        Size: =12
+        Text: |-
+            ="Commonly Used
+            "
+        Width: =152
+        X: =474
+        Y: =411
+        ZIndex: =26
+
+    lblLCDVALLastAssnID As label:
+        Color: =RGBA(0,0,0,0.5)
+        FontWeight: =FontWeight.Semibold
+        Height: =27
+        Size: =12
+        Text: |-
+            ="Dell
+            "
+        Width: =152
+        X: =474
+        Y: =517
+        ZIndex: =27
+
+    lblLCDLastAssnID As label:
+        Color: =RGBA(209, 80, 112, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =46
+        Size: =12
+        Text: |-
+            ="Last Assignment ID
+            "
+        Width: =152
+        X: =474
+        Y: =475
+        ZIndex: =28
+
+    Button8 As button:
+        BorderStyle: =BorderStyle.None
+        Fill: =RGBA(249, 234, 237, 1)
+        Height: =111
+        HoverBorderColor: =
+        HoverColor: =RGBA(249, 234, 237, 1)
+        HoverFill: =
+        Size: =24
+        Text: =
+        Width: =485
+        X: =116
+        Y: =642
+        ZIndex: =29
+
+    lblLCDNotes As label:
+        Color: =RGBA(209, 80, 112, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =27
+        Size: =12
+        Text: |-
+            ="Notes
+            "
+        Width: =152
+        X: =128
+        Y: =657
+        ZIndex: =30
+
+    lblLCDVALNOtes As label:
+        Color: =RGBA(0,0,0,0.5)
+        FontWeight: =FontWeight.Semibold
+        Height: =47
+        Size: =12
+        Text: |-
+            ="Notes about the asset or issues
+            "
+        Width: =280
+        X: =128
+        Y: =674
+        ZIndex: =31
+
+    lblLCDInvoice As label:
+        Color: =RGBA(209, 80, 112, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =27
+        Size: =12
+        Text: |-
+            ="Invoice
+            "
+        Width: =152
+        X: =128
+        Y: =765
+        ZIndex: =32
+

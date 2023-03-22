@@ -3,7 +3,7 @@
     "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
     "CdpRevision": {
       "BaseUrl": "/",
-      "LastChangedTimeString": "2022-12-19T18:06:32.2190000Z",
+      "LastChangedTimeString": "2023-03-17T19:26:46.5230000Z",
       "RevisionNumber": 1
     },
     "ConnectedDataSourceInfoNameMapping": {
@@ -37,6 +37,7 @@
       "Editor#Claims": "Modified By Claims",
       "ID": "ID",
       "Modified": "Modified",
+      "Testing": "Testing",
       "Title": "Title"
     },
     "DatasetName": "https://moderncomms077895.sharepoint.com",
